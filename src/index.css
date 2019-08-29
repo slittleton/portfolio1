@@ -4,10 +4,54 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
+  background-color: rgb(1, 31, 77);
+  color: white
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.flx{
+  display: flex
+}
+.small-pad{
+  padding: .5rem;
+}
+center{
+  justify-content: center;
+  text-align: center;
+ 
+}
+
+.banner{
+  justify-content: center;
+  text-align: center
+}
+
+
+/* MENU ====================== */
+.menu-bar{
+  display: flex;
+  background-color: rgb(216, 182, 28);
+
+}
+.list{
+  display: flex;
+  list-style: none;
+}
+.list-item{
+
+}
+.link-item{
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0rem 1rem 0rem 1rem;
+  color: rgb(1, 31, 77);
+  font-weight: bold
+}
+
+.flex-menu-item {
+font-size:2rem;
+}
+.link{
+  color: white;
+  text-decoration: none;
 }
