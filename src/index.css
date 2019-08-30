@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   background-color: rgb(1, 31, 77);
-  color: white
+  color: #cacaca
 }
 
 .flx{
@@ -15,10 +15,11 @@ body {
 .small-pad{
   padding: .5rem;
 }
-center{
+.center{
   justify-content: center;
   text-align: center;
- 
+  align-items: center;
+  vertical-align: center;
 }
 
 .banner{
@@ -30,28 +31,64 @@ center{
 /* MENU ====================== */
 .menu-bar{
   display: flex;
+  padding: 1rem;
+  padding: 0;
+  width: 100%;
+  margin: 0;
   background-color: rgb(216, 182, 28);
-
 }
 .list{
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   list-style: none;
+  background-color: rgb(216, 182, 28);
+  margin: 0;
 }
 .list-item{
-
+  background-color:rgb(216, 182, 28);
+  transition-duration: 750ms;
 }
-.link-item{
+
+
+.list-item:hover{
+  margin: 1rem 0
+}
+ .link-item{
   text-decoration: none;
   font-size: 1.5rem;
+  width: 75px;
   padding: 0rem 1rem 0rem 1rem;
   color: rgb(1, 31, 77);
-  font-weight: bold
+  font-weight: bold;
+  transition-duration: 750ms;
 }
+.link-item:hover{
+  color: rgb(216, 182, 28);
+  background-color:rgb(1, 31, 77);
+  padding: 1rem .5rem;
+} 
+
 
 .flex-menu-item {
 font-size:2rem;
+text-align: center;
+
+border: 1px solid red;
 }
+
 .link{
-  color: white;
+  color: #cacaca;
   text-decoration: none;
+
+}
+.link:hover{
+  color: rgb(216, 182, 28);
+
+}
+
+/* IMAGES ======================== */
+.logo {
+  width:200px;
+  height: 200px;
 }
