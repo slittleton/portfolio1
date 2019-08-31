@@ -1,15 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo3 from "../img/logo3.png";
+import logo2 from "../img/logo2.png";
 import blot1 from "../img/blot1.png";
 import blot2 from "../img/blot2.png";
 import blot3 from "../img/blot3.png";
+import blot1Back from "../img/blot1-about.png";
+import blot3Back from "../img/blot3-contact.png";
+import CardFlip from "../components/layout/CardFlip";
+
+const Child = () => {
+  return (
+    <div>
+      <div>
+        <Link to="/">Github</Link>
+      </div>
+      <div>
+        <Link to="/">Live Example</Link>
+      </div>
+    </div>
+  );
+};
 
 const Home = () => {
   return (
     <div className="home center">
       <div className="flx center">
-        <img src={logo3} alt="Logo" className="logo" />
+        <img src={logo2} alt="Logo" className="logo" />
       </div>
 
       <div className="banner">
@@ -21,27 +37,22 @@ const Home = () => {
 
       <div className="flex-menu flx small-pad center">
         <div className="flex-menu-item small-pad">
-          <div className="flx center">
-            <img src={blot1} alt="Logo" className="logo" />
-          </div>
           <Link to="/about" className="link">
-            About
+            <CardFlip image1={blot1} image2={blot1Back} title1="ABOUT"></CardFlip>
           </Link>
         </div>
         <div className="flex-menu-item small-pad">
-          <div className="flx center">
-            <img src={blot2} alt="Logo" className="logo" />
-          </div>
           <Link to="/projects" className="link">
-            Projects
+            <CardFlip
+              image1={blot2}
+              image2={blot2}
+              title1="PROJECTS"
+            ></CardFlip>
           </Link>
         </div>
         <div className="flex-menu-item small-pad">
-          <div className="flx center">
-            <img src={blot3} alt="Logo" className="logo" />
-          </div>
           <Link to="/contact" className="link">
-            Contact
+            <CardFlip image1={blot3} image2={blot3Back} title1="CONTACT" />
           </Link>
         </div>
       </div>

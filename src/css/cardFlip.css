@@ -1,0 +1,56 @@
+
+
+.card {
+  cursor: pointer;
+  height: 15rem;
+  width: 15rem;
+}
+.card:hover > .front{
+  transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.front img{
+  width: 15rem;
+  height: auto;
+
+}
+.front{
+  width: 15rem;
+  height: auto;
+  position:relative;
+  text-align: center;
+}
+
+.card-flip-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.back img{
+  width: 15rem;
+  height: auto;
+}
+
+.front, .back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  transition: transform 600ms linear
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  width: 15rem;
+  height: auto;
+  transform: perspective(600px) rotateY(180deg);
+  position: absolute;
+}
+.container {
+  position: relative;
+}

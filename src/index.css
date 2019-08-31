@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
-  background-color: rgb(1, 31, 77);
+  background-color: rgb(41, 41, 44);
   color: #cacaca
 }
 
@@ -35,46 +35,59 @@ body {
   padding: 0;
   width: 100%;
   margin: 0;
-  background-color: rgb(216, 182, 28);
+  justify-content: center;
+  /* background-color:rgb(1, 31, 77); */
 }
 .list{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 50%;
   list-style: none;
-  background-color: rgb(216, 182, 28);
+  /* background-color:rgb(1, 31, 77); */
   margin: 0;
+  
+  margin-right: 2rem;
 }
 .list-item{
-  background-color:rgb(216, 182, 28);
+  /* background-color:rgb(1, 31, 77); */
   transition-duration: 750ms;
+  padding: .5rem;
+  
 }
 
 
 .list-item:hover{
-  margin: 1rem 0
+  /* margin: 1rem 0;
+  border: none;
+  color: rgb(53, 53, 53);
+  background-color:rgb(206, 206, 206);
+  padding: 1rem .5rem; */
 }
  .link-item{
   text-decoration: none;
   font-size: 1.5rem;
   width: 75px;
   padding: 0rem 1rem 0rem 1rem;
-  color: rgb(1, 31, 77);
+  color: #cacaca;
   font-weight: bold;
   transition-duration: 750ms;
+  border: 1px solid #cacaca
 }
 .link-item:hover{
-  color: rgb(216, 182, 28);
-  background-color:rgb(1, 31, 77);
+  color: rgb(53, 53, 53);
+  background-color:rgb(206, 206, 206);
   padding: 1rem .5rem;
+  margin: 1rem 0;
+  border: none;
+  color: rgb(53, 53, 53);
+  background-color:rgb(206, 206, 206);
+  padding: 1rem ;
 } 
 
 
 .flex-menu-item {
 font-size:2rem;
 text-align: center;
-
-border: 1px solid red;
 }
 
 .link{
@@ -83,7 +96,7 @@ border: 1px solid red;
 
 }
 .link:hover{
-  color: rgb(216, 182, 28);
+
 
 }
 
