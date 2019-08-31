@@ -1,0 +1,68 @@
+.top {
+  background-color: #cacaca;
+  display: flex;
+  color: rgb(53, 53, 53);
+  width: 100%;
+  justify-content: center;
+}
+.top-container {
+  width: 60rem;
+}
+.profile-img {
+  width: 400px;
+  height: 400px;
+}
+.left-side {
+  background-color: rgb(53, 53, 53);
+  border-radius: 50%;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  width: 400px;
+  height: 400px;
+  margin: 2rem;
+}
+.right-side {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 1rem;
+  margin-right: 2rem;
+}
+.about-title {
+  color: #cacaca;
+  padding-left: 1rem;
+  background-color: rgb(53, 53, 53);
+}
+.exp-title {
+  color: rgb(53, 53, 53);
+
+  background-color: #cacaca;
+  font-size: 2rem;
+width: 100%;
+text-align: left;
+padding-left: 1rem;
+}
+.exp-subtitle {
+  background-color: rgb(53, 53, 53);
+}
+.bottom {
+  margin-top: 2rem;
+}
+.exp-container {
+  margin: 2rem;
+}
+
+.exp {
+  background-color: rgb(53, 53, 53);
+  display: flex;
+}
+.exp-grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.exp-ul {
+  margin-left: 1rem;
+}
+
+.small-grid-unit {
+  margin-right: 1rem;
+}

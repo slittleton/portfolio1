@@ -8,18 +8,6 @@ import blot1Back from "../img/blot1-about.png";
 import blot3Back from "../img/blot3-contact.png";
 import CardFlip from "../components/layout/CardFlip";
 
-const Child = () => {
-  return (
-    <div>
-      <div>
-        <Link to="/">Github</Link>
-      </div>
-      <div>
-        <Link to="/">Live Example</Link>
-      </div>
-    </div>
-  );
-};
 
 const Home = () => {
   return (
