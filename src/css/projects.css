@@ -1,0 +1,28 @@
+.projects-title{
+  color: rgb(53, 53, 53);
+  background-color: rgb(206, 206, 206);
+  padding: 1rem;
+  margin: 1rem 0
+}
+.project-title{
+  font-size: 1.5rem;
+
+  padding-left: 1rem;
+  font-weight: bold;
+
+}
+.project-card{
+  display: flex;
+  justify-content: center;
+}
+
+.card-container{
+  background-color: rgb(206, 206, 206);
+  color: rgb(53, 53, 53);
+  width: 25rem;
+}
+.project-img{
+  width: 25rem;
+  height: auto;
+  background-color:rgb(53, 53, 53);
+}
