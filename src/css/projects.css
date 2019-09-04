@@ -1,28 +1,130 @@
-.projects-title{
+.projects {
+}
+.projects-title-wrapper {
+  text-align: center;
+}
+.projects-title {
   color: rgb(53, 53, 53);
   background-color: rgb(206, 206, 206);
   padding: 1rem;
-  margin: 1rem 0
+  margin: 1rem 0;
 }
-.project-title{
+.project-title {
   font-size: 1.5rem;
-
+  background-color: rgb(206, 206, 206);
   padding-left: 1rem;
   font-weight: bold;
-
-}
-.project-card{
-  display: flex;
-  justify-content: center;
 }
 
-.card-container{
-  background-color: rgb(206, 206, 206);
+.card-container {
   color: rgb(53, 53, 53);
   width: 25rem;
 }
-.project-img{
+.project-img {
   width: 25rem;
   height: auto;
-  background-color:rgb(53, 53, 53);
+  background-color: rgb(53, 53, 53);
 }
+.img-container {
+  background-color: rgb(206, 206, 206);
+}
+
+.info-block {
+  background-color: rgb(53, 53, 53);
+  color: rgb(206, 206, 206);
+  display: grid;
+  grid-template-columns: 1.5fr 3fr;
+  border: 1px solid rgb(53, 53, 53);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+/* .info-trans-none{
+  display: none;
+
+}
+.info-trans{
+  background-color: rgb(206, 206, 206);
+  transition-duration: 750ms;
+  display: grid
+} */
+
+.info-subtitle {
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+.info-text {
+}
+.projects-container {
+  display: flex;
+  justify-content: center;
+}
+.project-card {
+  margin: 1rem;
+}
+.a-link {
+  color: cyan;
+}
+/* .info-trans:hover{
+  height: 300px;
+} */
+/* .info-trans-enter {
+  height: 0px;
+}
+.info-trans-enter-active {
+  height: 300px;
+  transition:  height 900ms;
+}
+.info-trans-exit {
+  height: 300px;
+}
+.info-trans-exit-active {
+  
+  transition: height 900ms;
+} */
+
+.green-box{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: green;
+}
+
+.blank{
+  display: none;
+}
+
+.box {
+  display: none
+}
+
+.box-enter {
+  display: grid;
+  opacity: 0;
+}
+.box-enter-active {
+  opacity: 1;
+  display: grid;
+  transition: all 900ms;
+}
+.box-enter-done {
+  display: grid;
+  opacity: 1;
+}
+
+.box-exit {
+  display: grid;
+  opacity: 1;
+}
+.box-exit-active {
+  display: grid;
+  transition: all 900ms;
+  opacity: 0;
+}
+.box-exit-done {
+  opacity: 0;
+  background-color: yellow;
+  display: none
+}
+
+
