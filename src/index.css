@@ -13,7 +13,7 @@ body {
   background-color: rgb(41, 41, 44);
   color: #cacaca;
 }
-.app{
+.app {
   margin: 0;
   padding: 0;
 }
@@ -33,6 +33,16 @@ body {
   align-items: center;
   vertical-align: center;
 }
+.title-wrapper {
+  background-color: #cacaca;
+  text-align: center;
+  padding: 0.5rem;
+}
+.title-dark {
+  font-size: 3rem;
+  color: rgb(53, 53, 53);
+  font-weight: bold;
+}
 
 .banner {
   justify-content: center;
@@ -49,10 +59,11 @@ body {
 .subsubtitle {
   font-weight: bold;
 }
-.atag{
+.atag {
   text-decoration: none;
   color: rgb(19, 64, 161);
 }
+
 /* MENU ====================== */
 .menu-bar {
   display: flex;
@@ -106,3 +117,51 @@ body {
   width: 200px;
   height: 200px;
 }
+
+/* HOME */
+.banner {
+  margin: 3rem;
+  padding: 1rem;
+  background-color: #3f3f3f;
+  transition: all 900ms;
+}
+.banner:hover{
+  transition: all 900ms;
+  background-color: #444444;
+}
+.blot {
+  margin: 1rem;
+  padding: 1rem;
+  transition: all 900ms;
+}
+.blot:hover {
+  transition: all 900ms;
+  background-color: rgb(41, 41, 44);
+  border-radius: 50%;
+}
+.blot-main {
+  margin: 1rem;
+  padding: 1rem;
+  transition: all 900ms;
+}
+.blot-main:hover {
+  transition: all 900ms;
+  background: rgb(19, 64, 161);
+  border-radius: 50%;
+}
+.img-back {
+  background-color: none;
+  transition: all 900ms;
+}
+.img-back:hover {
+  background-color: rgb(19, 64, 161);
+  transition: all 900ms;
+}
+
+/* .main-img-back {
+  transition: all 900ms;
+}
+.main-img-back:hover {
+  transition: all 900ms;
+  background-color: #3f3f3f;
+} */

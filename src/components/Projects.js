@@ -40,8 +40,8 @@ const project3 = {
 const Projects = () => {
   return (
     <div className="projects">
-      <div className="projects-title-wrapper">
-        <div className="title projects-title">Projects</div>
+      <div className="title-wrapper">
+        <div className="title-dark">Projects</div>
       </div>
 
       <div className="projects-container">

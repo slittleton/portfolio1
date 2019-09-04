@@ -6,7 +6,7 @@ const CardFlip = (props) => {
   return (
     <div className="card container">
 
-    <div class="front">
+    <div class="front title-box">
       <img src={props.image1} alt="" className="imgfront" />
       <div className="card-flip-title">{props.title1}</div>
     </div>
