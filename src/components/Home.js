@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo2 from "../img/logo2.png";
-import blot1 from "../img/blot1.png";
-import blot2 from "../img/blot2.png";
+import blot1 from "../img/blot1-c.png";
+import blot2 from "../img/blot2-c.png";
 import blot2back from "../img/blot2-back.png";
-import blot3 from "../img/blot3.png";
+import blot3 from "../img/blot3-c.png";
 import blot1Back from "../img/blot1-about.png";
 import blot3Back from "../img/blot3-contact.png";
 import CardFlip from "../components/layout/CardFlip";

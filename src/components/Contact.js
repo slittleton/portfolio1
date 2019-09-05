@@ -6,24 +6,45 @@ const Contact = () => {
       <div className="title-wrapper">
         <div className="title-dark">CONTACT</div>
       </div>
-      <div className="contact-info">
-        <div className="subtitle contact-type">Email: </div>
-        <a href="https://mail.google.com" className="a-link">
-          littletonse@gmail.com
-        </a>
-        <div className="subtitle contact-type">Github: </div>
-        <a href="https://github.com/slittleton" className="a-link">
-          slittleton
-        </a>
-        <div className="subtitle contact-type">LinkedIn: </div>
-        <a
-          href="https://www.linkedin.com/in/scott-littleton-1a1246161/"
-          className="a-link"
-        >
-          littletonse@gmail.com
-        </a>
+      <div className="contact-container">
+        <div className="contact-methods">
+          <div className="contact-info">
+            <div className=" contact-type">Email: </div>
+            <div className="link-wrapper">
+              <a href="https://mail.google.com" className="contact-link">
+                littletonse@gmail.com
+              </a>
+            </div>
+          </div>
+          <div className="contact-info">
+            <div className=" contact-type">Github: </div>
+            <div className="link-wrapper">
+              <a href="https://github.com/slittleton" className="contact-link">
+                slittleton
+              </a>
+            </div>
+          </div>
+
+          <div className="contact-info">
+            <div className=" contact-type">LinkedIn: </div>
+            <div className="link-wrapper">
+              <a
+                href="https://www.linkedin.com/in/scott-littleton-1a1246161/"
+                className="contact-link"
+              >
+                littletonse@gmail.com
+              </a>
+            </div>
+          </div>
+          
+        </div>
+        <ContactForm />
+        <div>
+        
+        </div>
+        
       </div>
-      <ContactForm />
+
     </div>
   );
 };
