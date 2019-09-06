@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Link} from 'react-router-dom';
-import Menu from './components/layout/Menu';
+import { BrowserRouter, Route} from 'react-router-dom';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -12,7 +11,7 @@ function App() {
   return (
     <BrowserRouter >
       <div className="App">
-      <Menu/>
+      
 
       <Route exact path="/" component={Home}/>
       <Route exact path="/about" component={About}/>

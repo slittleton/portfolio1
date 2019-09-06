@@ -38,15 +38,6 @@
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-/* .info-trans-none{
-  display: none;
-
-}
-.info-trans{
-  background-color: rgb(206, 206, 206);
-  transition-duration: 750ms;
-  display: grid
-} */
 
 .info-subtitle {
   font-weight: bold;
@@ -58,29 +49,17 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 900px) {
+  .projects-container  {
+    display: grid;
+  }
+}
 .project-card {
   margin: 1rem;
 }
 .a-link {
   color: cyan;
 }
-/* .info-trans:hover{
-  height: 300px;
-} */
-/* .info-trans-enter {
-  height: 0px;
-}
-.info-trans-enter-active {
-  height: 300px;
-  transition:  height 900ms;
-}
-.info-trans-exit {
-  height: 300px;
-}
-.info-trans-exit-active {
-  
-  transition: height 900ms;
-} */
 
 .green-box{
   font-size: 2rem;

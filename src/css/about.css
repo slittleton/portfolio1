@@ -4,9 +4,19 @@
   color: rgb(41, 41, 44);
   width: 100%;
   justify-content: center;
+
+}
+@media (max-width: 900px) {
+  .top
+  .top-container {
+    display: grid;
+    width: 30rem;
+    justify-content: center;
+  }
 }
 .top-container {
   width: 60rem;
+  display: flex;
 }
 .profile-img {
   width: 400px;

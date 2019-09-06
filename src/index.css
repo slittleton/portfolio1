@@ -13,6 +13,9 @@ body {
   background-color: rgb(41, 41, 44);
   color: #cacaca;
 }
+
+
+
 .app {
   margin: 0;
   padding: 0;
@@ -37,6 +40,7 @@ body {
   background-color: #cacaca;
   text-align: center;
   padding: 0.5rem;
+  margin-bottom: 1rem;
 }
 .title-dark {
   font-size: 3rem;
@@ -81,10 +85,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 1rem;
+  margin: 1rem;
 }
 .list-item {
   transition-duration: 750ms;
-  padding: 0.5rem;
 }
 
 .list-item:hover {
@@ -93,7 +97,7 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   width: 75px;
-  padding: 0rem 1rem 0.5rem 1rem;
+  padding: 0.5rem;
   color: #cacaca;
   font-weight: bold;
   transition-duration: 750ms;
@@ -109,6 +113,9 @@ body {
   font-size: 2rem;
   text-align: center;
 }
+.flex-menu {
+  display: flex;
+}
 
 .link {
   color: #cacaca;
@@ -122,10 +129,13 @@ body {
 }
 
 /* HOME */
+.home {
+  margin-top: 5rem;
+}
 .banner {
-  margin: 3rem;
+  margin: 3rem 0 3rem 0;
   padding: 1rem;
-  background-color: #3f3f3f;
+  background-color: #555151;
   transition: all 900ms;
 }
 .banner:hover {
@@ -170,7 +180,6 @@ body {
 .contact-form {
   display: flex;
   justify-content: center;
-  /* margin: 1rem; */
 }
 .form-control {
   justify-content: center;
@@ -209,7 +218,6 @@ body {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   background-color: rgb(41, 41, 44);
-  /* border-bottom: 1px solid gray; */
   padding-left: 1rem;
   padding-top: 0.5rem;
 }
@@ -240,38 +248,51 @@ body {
 
 /* CONTACT */
 .contact {
-background-color: #cacaca;
-padding-bottom: 1rem;
+  background-color: #cacaca;
+  padding-bottom: 1rem;
 }
 .contact-container {
-display: flex;
-justify-content: center
+  display: flex;
+  justify-content: center;
 }
+
 .contact-methods {
-  background-color:rgb(41, 41, 44);
+  background-color: rgb(41, 41, 44);
   margin: 1rem;
   padding: 1rem;
 }
 .contact-info:hover {
-transition: all, 500ms;
-background-color: rgb(51, 51, 51);
-
+  transition: all, 500ms;
+  background-color: rgb(51, 51, 51);
 }
 
 .contact-info {
-margin: 1rem;
-display: flex;
-padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  padding: 1rem;
+  font-size: 1.25rem;
 }
 .contact-type {
   color: #cacaca;
   width: 5rem;
 }
 .link-wrapper {
- 
 }
 .contact-link {
   color: cyan;
   margin-left: 1rem;
 }
 
+
+
+@media (max-width: 900px) {
+  .flex-menu {
+    display: grid;
+  }
+  .contact-container {
+    display: grid;
+  }
+  .menu-bar{
+    display: grid
+  }
+}

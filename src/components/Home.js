@@ -24,7 +24,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex-menu flx small-pad center img-back">
+      <div className="flex-menu small-pad center img-back">
         <div className="flex-menu-item small-pad blot">
           <Link to="/about" className="link">
             <CardFlip image1={blot1} image2={blot1Back} title1="ABOUT"></CardFlip>
@@ -45,19 +45,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-
-      <div className="soc-media">
-        <div className="soc-media-icon">
-          <i>Icon</i>
-        </div>
-        <div className="soc-media-icon">
-          <i>Icon</i>
-        </div>
-        <div className="soc-media-icon">
-          <i>Icon</i>
-        </div>
-      </div>
-      <footer><p>©2019 Scott Littleton</p></footer>
     </div>
   );
 };

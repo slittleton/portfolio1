@@ -4,6 +4,7 @@ import catcalc from "../img/catcalc1.png";
 import pickydex1 from "../img/pickydex1.png";
 import ecomm1 from "../img/ecomm1.png";
 import ProjectCard from "./layout/ProjectCard";
+import Menu from "./layout/Menu";
 
 const project1 = {
   projectName: "Calculator Cat",
@@ -39,7 +40,10 @@ const project3 = {
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div>
+      <Menu/>
+      <div className="projects">
+      
       <div className="title-wrapper">
         <div className="title-dark">Projects</div>
       </div>
@@ -50,6 +54,8 @@ const Projects = () => {
         <ProjectCard project={project3} />
       </div>
     </div>
+    </div>
+
   );
 };
 
