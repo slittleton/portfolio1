@@ -15,7 +15,7 @@ const Contact = () => {
               <div className=" contact-type">Email: </div>
               <div className="link-wrapper">
                 <a href="https://mail.google.com" className="contact-link">
-                  littletonse@gmail.com
+                  slittletondev@gmail.com
                 </a>
               </div>
             </div>
