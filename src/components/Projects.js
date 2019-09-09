@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../css/projects.css";
 import catcalc from "../img/catcalc1.png";
 import pickydex1 from "../img/pickydex1.png";
 import ecomm1 from "../img/ecomm1.png";
 import ProjectCard from "./layout/ProjectCard";
-import Menu from "./layout/Menu";
 
 const project1 = {
   projectName: "Calculator Cat",
@@ -43,20 +42,18 @@ const project3 = {
 
 const Projects = React.forwardRef((props, projectsRef) => {
   return (
-    <div className="spacer-container"ref={projectsRef}>
-   
-        <div className="projects">
-          <div className="title-wrapper">
-            <div className="title-dark">Projects</div>
-          </div>
-
-          <div className="projects-container" >
-            <ProjectCard project={project1} />
-            <ProjectCard project={project2} />
-            <ProjectCard project={project3} />
-          </div>
+    <div className="spacer-container" ref={projectsRef}>
+      <div className="projects">
+        <div className="title-wrapper">
+          <div className="title-dark">Projects</div>
         </div>
 
+        <div className="projects-container">
+          <ProjectCard project={project1} />
+          <ProjectCard project={project2} />
+          <ProjectCard project={project3} />
+        </div>
+      </div>
     </div>
   );
 });
