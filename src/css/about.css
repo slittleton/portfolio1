@@ -46,6 +46,9 @@
 .exp-subtitle {
   background-color: rgb(41, 41, 44);
 }
+.text {
+  font-size: 1.5rem;
+}
 .bottom {
   margin-top: 2rem;
 }

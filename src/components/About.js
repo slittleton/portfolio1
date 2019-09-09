@@ -35,7 +35,7 @@ const familiar = [
   "CSS-flexbox",
   "Photoshop",
   "JSX",
-
+  "REST"
 ];
 const someFamiliarity = [
   "Python",
@@ -48,7 +48,8 @@ const someFamiliarity = [
   "SSH",
   "MySQL",
   "FireBase",
-  "JOI"
+  "JOI",
+  "Heroku",
 ];
 const ETLearnAbout = [
   "C#",
@@ -71,16 +72,7 @@ const About = () => {
             <div className="right-side">
               <div className="title about-title">ABOUT</div>
               <div className="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum quos, illo commodi facilis voluptates modi
-                necessitatibus. Vero cum odit eligendi cupiditate aspernatur sit
-                ex molestias, ipsam praesentium laboriosam quo cumque ipsa
-                assumenda libero natus accusantium enim temporibus ducimus!
-                Eius, et at? Sapiente et odio id dolorum aspernatur asperiores
-                deleniti voluptatibus corrupti officia quaerat? Placeat totam,
-                sed cumque quos deleniti, ratione, aut illum ullam esse in
-                nesciunt distinctio rerum vero cum ipsam! Eaque, veniam rerum at
-                nihil perspiciatis voluptatibus eveniet quibusdam Similique.
+              My name is Scott Littleton. I have a background that ranges from studying a variety of social sciences to running a small business to teaching myself to code. I have found what I enjoy most is working with and learning about technology to build things. 
               </div>
             </div>
           </div>

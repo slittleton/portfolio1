@@ -21,6 +21,7 @@ body {
   padding: 0;
 }
 
+
 .flx {
   display: flex;
 }
@@ -144,12 +145,14 @@ body {
 }
 .blot {
   margin: 1rem;
-  padding: 1rem;
+  padding: 2rem;
   transition: all 900ms;
+  border-radius: 50%;
 }
 .blot:hover {
   transition: all 900ms;
-  background-color: rgb(41, 41, 44);
+  background-color: black;
+  
   border-radius: 50%;
 }
 .blot-main {
@@ -166,10 +169,10 @@ body {
   background-color: none;
   transition: all 900ms;
 }
-.img-back:hover {
+/* .img-back:hover {
   background-color: black;
   transition: all 900ms;
-}
+} */
 
 /* FORMS */
 .form {
@@ -267,22 +270,26 @@ body {
 }
 
 .contact-info {
-  margin: 1rem;
   display: flex;
+  justify-content: center;
   padding: 1rem;
   font-size: 1.25rem;
 }
 .contact-type {
   color: #cacaca;
   width: 5rem;
+  font-size: 1.5rem;
 }
 .link-wrapper {
 }
 .contact-link {
   color: cyan;
-  margin-left: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
-
+.icon-style:hover{
+  color: rgb(0, 255, 200)
+}
 
 
 @media (max-width: 900px) {

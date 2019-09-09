@@ -20,7 +20,7 @@ const Home = () => {
       <div className="banner">
         <div className="subtitle">Hi my name is Scott.</div>
         <div className="subtitle">
-          I'm a webdeveloper in Glendale Arizona.
+          I'm a web developer in Glendale Arizona.
         </div>
       </div>
 
