@@ -16,7 +16,7 @@ body {
 
 
 
-.app {
+.App {
   margin: 0;
   padding: 0;
 }
@@ -71,13 +71,19 @@ body {
 .light-gray-back {
   background-color: #cacaca;
 }
-
+.spacer-container {
+  margin-top:5rem;
+  border-top: 1px solid rgba(0,0,0,0)
+}
 /* MENU ====================== */
 .menu-bar {
-  display: flex;
+   display: flex;
   width: 100%;
   margin: 0;
   justify-content: center;
+  position: fixed;
+  background-color: black;
+  z-index: 10;
 }
 .list {
   display: flex;
@@ -85,7 +91,7 @@ body {
   width: 50%;
   list-style: none;
   margin: 0;
-  padding: 1rem;
+  /* padding: 1rem; */
   margin: 1rem;
 }
 .list-item {
@@ -93,11 +99,11 @@ body {
 }
 
 .list-item:hover {
+  cursor: pointer
 }
 .link-item {
   text-decoration: none;
   font-size: 1.5rem;
-  width: 75px;
   padding: 0.5rem;
   color: #cacaca;
   font-weight: bold;
@@ -131,7 +137,7 @@ body {
 
 /* HOME */
 .home {
-  margin-top: 5rem;
+  padding-top: 5rem;
 }
 .banner {
   margin: 3rem 0 3rem 0;
@@ -153,7 +159,7 @@ body {
   transition: all 900ms;
   background-color: black;
   
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 .blot-main {
   margin: 1rem;
@@ -166,8 +172,8 @@ body {
   border-radius: 50%;
 }
 .img-back {
-  background-color: none;
-  transition: all 900ms;
+  /* background-color: none;
+  transition: all 900ms; */
 }
 /* .img-back:hover {
   background-color: black;

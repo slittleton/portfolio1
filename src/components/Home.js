@@ -10,10 +10,11 @@ import blot3Back from "../img/blot3-contact.png";
 import CardFlip from "../components/layout/CardFlip";
 
 
-const Home = () => {
+const Home = React.forwardRef((props, homeRef) => {
+  const { navClick, projectsRef, aboutRef,contactRef } = props;
   return (
-    <div className="home center">
-      <div className="flx center ">
+    <div className="center" ref={homeRef}>
+      <div className="flx center home">
         <img src={logo2} alt="Logo" className="logo blot-main" />
       </div>
 
@@ -26,27 +27,27 @@ const Home = () => {
 
       <div className="flex-menu small-pad center img-back">
         <div className="flex-menu-item small-pad blot">
-          <Link to="/about" className="link">
+          <div onClick={()=>navClick(aboutRef)} className="link">
             <CardFlip image1={blot1} image2={blot1Back} title1="ABOUT"></CardFlip>
-          </Link>
+          </div>
         </div>
         <div className="flex-menu-item small-pad blot">
-          <Link to="/projects" className="link ">
+          <div onClick={()=>navClick(projectsRef)} className="link ">
             <CardFlip
               image1={blot2}
               image2={blot2back}
               title1="PROJECTS"
             ></CardFlip>
-          </Link>
+          </div>
         </div>
         <div className="flex-menu-item small-pad blot">
-          <Link to="/contact" className="link">
+          <div onClick={()=>navClick(contactRef)} className="link">
             <CardFlip image1={blot3} image2={blot3Back} title1="CONTACT" />
-          </Link>
+          </div>
         </div>
       </div>
     </div>
   );
-};
+});
 
 export default Home;

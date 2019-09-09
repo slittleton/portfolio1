@@ -49,138 +49,149 @@ const someFamiliarity = [
   "MySQL",
   "FireBase",
   "JOI",
-  "Heroku",
+  "Heroku"
 ];
-const ETLearnAbout = [
-  "C#",
-  ".Net",
-  "Java",
-  "Kotlin",
-  "PHP"
-]
+const ETLearnAbout = ["C#", ".Net", "Java", "Kotlin", "PHP"];
 
-const About = () => {
+const About = React.forwardRef((props, aboutRef) => {
   return (
-    <div>
-      <Menu />
-      <div className="about">
-        <div className="top">
-          <div className="top-container">
-            <div className="left-side">
-              <img src={profilepic} alt="" className="profile-img" />
-            </div>
-            <div className="right-side">
-              <div className="title about-title">ABOUT</div>
-              <div className="text">
-              My name is Scott Littleton. I have a background that ranges from studying a variety of social sciences to running a small business to teaching myself to code. I have found what I enjoy most is working with and learning about technology to build things. 
+    <div ref={aboutRef}>
+      <div className="spacer-container">
+        <div className="about">
+          <div className="top">
+            <div className="top-container">
+              <div className="left-side">
+                <img src={profilepic} alt="" className="profile-img" />
+              </div>
+              <div className="right-side">
+                <div className="title about-title">ABOUT</div>
+                <div className="text">
+                  My name is Scott Littleton. I have a background that ranges
+                  from studying a variety of social sciences to running a small
+                  business to teaching myself to code. I have found what I enjoy
+                  most is working with and learning about technology to build
+                  things.
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="bottom">
-          <div className="exp">
-            <h2 className=" center exp-title">Tech</h2>
-          </div>
+          <div className="bottom">
+            <div className="exp">
+              <h2 className=" center exp-title">Tech</h2>
+            </div>
 
-          <div className="exp-container">
-            <div className="exp-grid">
-              <div className="small-grid-unit">
-                <div className="sub-subtitle">Familiar</div>
+            <div className="exp-container">
+              <div className="exp-grid">
+                <div className="small-grid-unit">
+                  <div className="sub-subtitle">Familiar</div>
+                </div>
               </div>
-            </div>
-            <div className="exp-grid">
-              <div className="small-grid-unit"></div>
-              <div className="flx">
-                <div className="exp-item list-grid">
+              <div className="exp-grid">
+                <div className="small-grid-unit"></div>
+                <div className="flx">
+                  <div className="exp-item list-grid">
                     {familiar.map((item, index) => {
-                      return <li className="grid-list-item" key={index}>{item}</li>;
+                      return (
+                        <li className="grid-list-item" key={index}>
+                          {item}
+                        </li>
+                      );
                     })}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="exp-grid">
-              <div className="small-grid-unit">
-                <div className="sub-subtitle">Some Familiarity</div>
+              <div className="exp-grid">
+                <div className="small-grid-unit">
+                  <div className="sub-subtitle">Some Familiarity</div>
+                </div>
               </div>
-            </div>
-            <div className="exp-grid">
-              <div className="small-grid-unit"></div>
-              <div className="flx">
-              <div className="exp-item list-grid">
+              <div className="exp-grid">
+                <div className="small-grid-unit"></div>
+                <div className="flx">
+                  <div className="exp-item list-grid">
                     {someFamiliarity.map((item, index) => {
-                      return <li className="grid-list-item" key={index}>{item}</li>;
+                      return (
+                        <li className="grid-list-item" key={index}>
+                          {item}
+                        </li>
+                      );
                     })}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="exp-grid">
-              <div className="small-grid-unit">
-                <div className="sub-subtitle">Excited To Learn About</div>
+              <div className="exp-grid">
+                <div className="small-grid-unit">
+                  <div className="sub-subtitle">Excited To Learn About</div>
+                </div>
               </div>
-            </div>
-            <div className="exp-grid">
-              <div className="small-grid-unit"></div>
-              <div className="flx">
-              <div className="exp-item list-grid">
+              <div className="exp-grid">
+                <div className="small-grid-unit"></div>
+                <div className="flx">
+                  <div className="exp-item list-grid">
                     {ETLearnAbout.map((item, index) => {
-                      return <li className="grid-list-item" key={index}>{item}</li>;
+                      return (
+                        <li className="grid-list-item" key={index}>
+                          {item}
+                        </li>
+                      );
                     })}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="bottom">
-          <div className="exp">
-            <h2 className=" center exp-title">Experience</h2>
-          </div>
-
-          <div className="experience-type">
-            <AboutEntry jobInfo={job1} />
-          </div>
-
-          {/* EDUCATION */}
-          <div className="exp-container">
-            <div className="exp-grid">
-              <div className="small-grid-unit">
-                <div className="sub-subtitle">Education</div>
-              </div>
+          <div className="bottom">
+            <div className="exp">
+              <h2 className=" center exp-title">Experience</h2>
             </div>
 
-            <div className="exp-grid">
-              <div className="small-grid-unit">
-                <div className="subsubtitle">
-                  Cal State University Fullerton
+            <div className="experience-type">
+              <AboutEntry jobInfo={job1} />
+            </div>
+
+            {/* EDUCATION */}
+            <div className="exp-container">
+              <div className="exp-grid">
+                <div className="small-grid-unit">
+                  <div className="sub-subtitle">Education</div>
                 </div>
-                <div className="date">Attended: 8/31/2010 - 8/31/2013</div>
               </div>
-              <div className="flx">
-                <p className="exp-item subsubtitle">
-                  M.A. Biological Anthropology
-                </p>
-              </div>
-            </div>
 
-            <div className="exp-grid">
-              <div className="small-grid-unit">
-                <div className="subsubtitle">Arizona State University</div>
-                <div className="date">Attended: 2004 - 2008</div>
+              <div className="exp-grid">
+                <div className="small-grid-unit">
+                  <div className="subsubtitle">
+                    Cal State University Fullerton
+                  </div>
+                  <div className="date">Attended: 8/31/2010 - 8/31/2013</div>
+                </div>
+                <div className="flx">
+                  <p className="exp-item subsubtitle">
+                    M.A. Biological Anthropology
+                  </p>
+                </div>
               </div>
-              <div className="">
-                <p className="exp-item subsubtitle">B.A. Political Science</p>
-                <p className="exp-item subsubtitle">B.A. Philosophy</p>
-              </div>
-            </div>
 
-            <div className="exp-grid">
-              <div className="small-grid-unit">
-                <div className="subsubtitle">Yavapai Community College</div>
-                <div className="date">Attended: 2001 - 2004</div>
+              <div className="exp-grid">
+                <div className="small-grid-unit">
+                  <div className="subsubtitle">Arizona State University</div>
+                  <div className="date">Attended: 2004 - 2008</div>
+                </div>
+                <div className="">
+                  <p className="exp-item subsubtitle">B.A. Political Science</p>
+                  <p className="exp-item subsubtitle">B.A. Philosophy</p>
+                </div>
               </div>
-              <div className="flx">
-                <p className="exp-item subsubtitle">A.S. General Science</p>
+
+              <div className="exp-grid">
+                <div className="small-grid-unit">
+                  <div className="subsubtitle">Yavapai Community College</div>
+                  <div className="date">Attended: 2001 - 2004</div>
+                </div>
+                <div className="flx">
+                  <p className="exp-item subsubtitle">A.S. General Science</p>
+                </div>
               </div>
             </div>
           </div>
@@ -188,6 +199,6 @@ const About = () => {
       </div>
     </div>
   );
-};
+});
 
 export default About;

@@ -23,7 +23,8 @@ const project2 = {
   lang: "Javascript",
   framework: "React",
   runTimeEnvironment: "Node Js",
-  other: "express, mongoDB, mongoose, jsonwebtoken, joi, bcrypt, config, redux, dotenv, braintree, query-string, react-redux, redux-thunk ",
+  other:
+    "express, mongoDB, mongoose, jsonwebtoken, joi, bcrypt, config, redux, dotenv, braintree, query-string, react-redux, redux-thunk ",
   githubLink: "https://github.com/slittleton/ecomm1",
   projectLink: "https://github.com/slittleton/ecomm1"
 };
@@ -33,30 +34,31 @@ const project3 = {
   type: "Mobile, Front End, UX/UI",
   lang: "Javascript",
   framework: "React, React-Native",
-  other: "redux, react-redux, redux-thunk, react-native-community/async-storage, react-native-gesture-handler, react-navigation",
+  other:
+    "redux, react-redux, redux-thunk, react-native-community/async-storage, react-native-gesture-handler, react-navigation",
   githubLink: "https://github.com/slittleton/pickydexNative",
-  projectLink: "https://play.google.com/store/apps/details?id=com.pickydexnative"
+  projectLink:
+    "https://play.google.com/store/apps/details?id=com.pickydexnative"
 };
 
-const Projects = () => {
+const Projects = React.forwardRef((props, projectsRef) => {
   return (
-    <div>
-      <Menu/>
-      <div className="projects">
-      
-      <div className="title-wrapper">
-        <div className="title-dark">Projects</div>
-      </div>
+    <div className="spacer-container"ref={projectsRef}>
+   
+        <div className="projects">
+          <div className="title-wrapper">
+            <div className="title-dark">Projects</div>
+          </div>
 
-      <div className="projects-container">
-        <ProjectCard project={project1} />
-        <ProjectCard project={project2} />
-        <ProjectCard project={project3} />
-      </div>
-    </div>
-    </div>
+          <div className="projects-container" >
+            <ProjectCard project={project1} />
+            <ProjectCard project={project2} />
+            <ProjectCard project={project3} />
+          </div>
+        </div>
 
+    </div>
   );
-};
+});
 
 export default Projects;

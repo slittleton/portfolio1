@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ContactForm from "./forms/ContactForm";
 import Menu from "./layout/Menu";
-const Contact = () => {
+const Contact = React.forwardRef((props, contactRef) => {
+
   return (
-    <div>
-      <Menu/>
+    <div ref={contactRef}>
+
       <div className="contact">
         <div className="title-wrapper">
           <div className="title-dark">CONTACT</div>
@@ -36,12 +37,12 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <ContactForm />
+          {/* <ContactForm /> */}
           <div></div>
         </div>
       </div>
     </div>
   );
-};
+})
 
 export default Contact;
