@@ -1,3 +1,5 @@
+
+
 .projects {
   margin-top:5rem;
   height:55rem;
@@ -6,37 +8,42 @@
   text-align: center;
 }
 .projects-title {
-  color: rgb(53, 53, 53);
-  background-color: rgb(206, 206, 206);
+  color: var(--color3);
+  background-color: var(--headingcolor);
   padding: 1rem;
   margin: 1rem 0;
 }
+.main-heading{
+  font-size: 3rem;
+  color: var(--headingcolor);
+  font-weight: bold;
+}
 .project-title {
   font-size: 1.5rem;
-  background-color: rgb(206, 206, 206);
+  background-color: var(--subheadingcolor);
   padding-left: 1rem;
   font-weight: bold;
 }
 
 .card-container {
-  color: rgb(53, 53, 53);
+  color: var(--color3);
   width: 25rem;
 }
 .project-img {
   width: 25rem;
   height: auto;
-  background-color: rgb(53, 53, 53);
+  background-color: var(--color3);
 }
 .img-container {
-  background-color: rgb(206, 206, 206);
+  background-color: var(--color2);
 }
 
 .info-block {
-  background-color: rgb(53, 53, 53);
-  color: rgb(206, 206, 206);
+  background-color: var(--color3);
+  color: var(--color2);
   display: grid;
   grid-template-columns: 1.5fr 3fr;
-  border: 1px solid rgb(53, 53, 53);
+  border: 1px solid var(--color3);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -60,7 +67,7 @@
   margin: 1rem;
 }
 .a-link {
-  color: cyan;
+  color: var(--linkcolor);
 }
 
 .green-box{

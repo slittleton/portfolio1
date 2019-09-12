@@ -1,10 +1,11 @@
-.about{
-  margin-top:5rem;
+.about {
+  margin-top: 5rem;
 }
+
 .top {
-  background-color: #cacaca;
+  background-color: var(--color2);
   display: flex;
-  color: rgb(41, 41, 44);
+  color: var(--color1);
   width: 100%;
   justify-content: center;
 }
@@ -18,7 +19,7 @@
   height: 400px;
 }
 .left-side {
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
   border-radius: 50%;
   margin-right: 2rem;
   margin-left: 1rem;
@@ -33,21 +34,21 @@
   margin-right: 2rem;
 }
 .about-title {
-  color: #cacaca;
+  color: var(--color2);
   padding-left: 1rem;
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
 }
 .exp-title {
-  color: rgb(41, 41, 44);
+  color: var(--headingcolor);
 
-  background-color: #cacaca;
+  background-color: var(--color2);
   font-size: 2rem;
   width: 100%;
   text-align: left;
   padding-left: 1rem;
 }
 .exp-subtitle {
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
 }
 .text {
   font-size: 1.5rem;
@@ -60,7 +61,7 @@
 }
 
 .exp {
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
   display: flex;
 }
 .exp-grid {
@@ -92,7 +93,7 @@
 .sub-subtitle {
   font-size: 1.5rem;
   width: 80%;
-  border-bottom: 1px solid #cacaca;
+  border-bottom: 1px solid var(--color2);
 }
 
 .list-grid {

@@ -1,3 +1,26 @@
+:root {
+  /* light theme */
+  /* 
+  --color1: rgb(209, 209, 209);
+  --color2: rgb(54, 54, 54);
+  --color3: rgb(255, 215, 169); 
+  --color4: rgb(37, 37, 37); 
+  --color5: rgb(218, 218, 218); 
+  --headingcolor: rgb(226, 226, 226);
+  --subheadingcolor: rgb(41, 41, 41);
+  --linkcolor: rgb(0, 95, 184); */
+
+  /* dark theme */
+
+  --color1: rgb(32, 32, 32);
+  --color2: rgb(202, 202, 202);
+  --color3: rgb(68, 68, 68);
+  --color4: rgb(0, 0, 0);
+  --headingcolor: rgb(0, 0, 0);
+  --subheadingcolor: rgb(192, 192, 192);
+  --linkcolor: rgb(0, 255, 255);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +33,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(41, 41, 44);
-  color: #cacaca;
+  background-color: var(--color1);
+  color: var(--color2);
 }
-
-
 
 .App {
   margin: 0;
   padding: 0;
 }
-
 
 .flx {
   display: flex;
@@ -38,21 +58,17 @@ body {
   vertical-align: center;
 }
 .title-wrapper {
-  background-color: #cacaca;
+  background-color: var(--color2);
   text-align: center;
   padding: 0.5rem;
   margin-bottom: 1rem;
 }
 .title-dark {
   font-size: 3rem;
-  color: rgb(41, 41, 44);
+  color: var(--color1);
   font-weight: bold;
 }
 
-.banner {
-  justify-content: center;
-  text-align: center;
-}
 .title {
   font-size: 2rem;
   font-weight: bold;
@@ -66,23 +82,24 @@ body {
 }
 .atag {
   text-decoration: none;
-  color: cyan;
+  color: var(--linkcolor);
 }
 .light-gray-back {
-  background-color: #cacaca;
+  background-color: var(--color2);
 }
 .spacer-container {
-  margin-top:5rem;
-  border-top: 1px solid rgba(0,0,0,0)
+  margin-top: 5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0);
 }
 /* MENU ====================== */
 .menu-bar {
-   display: flex;
+  display: flex;
   width: 100%;
   margin: 0;
   justify-content: center;
   position: fixed;
-  background-color: black;
+  background-color: var(--color4);
+  color: var(--color5);
   z-index: 10;
 }
 .list {
@@ -99,20 +116,20 @@ body {
 }
 
 .list-item:hover {
-  cursor: pointer
+  cursor: pointer;
 }
 .link-item {
   text-decoration: none;
   font-size: 1.5rem;
   padding: 0.5rem;
-  color: #cacaca;
+  color: var(--color5);
   font-weight: bold;
   transition-duration: 750ms;
-  border: 1px solid #cacaca;
+  border: 1px solid var(--color2);
 }
 .link-item:hover {
-  color: rgb(41, 41, 44);
-  background-color: rgb(206, 206, 206);
+  color: var(--color2);
+  background-color: var(--color5);
   padding: 1rem;
 }
 
@@ -125,7 +142,7 @@ body {
 }
 
 .link {
-  color: #cacaca;
+  color: var(--color2);
   text-decoration: none;
 }
 
@@ -140,14 +157,20 @@ body {
   padding-top: 5rem;
 }
 .banner {
+  justify-content: center;
+  text-align: center;
+
+  background-color: var(--color1);
+  color: var(--color2);
   margin: 3rem 0 3rem 0;
   padding: 1rem;
-  background-color: #555151;
+
   transition: all 900ms;
 }
 .banner:hover {
   transition: all 900ms;
-  background-color: #444444;
+  background-color: var(--color2);
+  color: var(--color1);
 }
 .blot {
   margin: 1rem;
@@ -157,8 +180,8 @@ body {
 }
 .blot:hover {
   transition: all 900ms;
-  background-color: black;
-  
+  /* background-color: var(--color4); */
+
   /* border-radius: 50%; */
 }
 .blot-main {
@@ -168,7 +191,7 @@ body {
 }
 .blot-main:hover {
   transition: all 900ms;
-  background: black;
+  background: var(--color4);
   border-radius: 50%;
 }
 .img-back {
@@ -184,7 +207,7 @@ body {
 .form {
   margin: 1rem;
   padding: 1rem;
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
 }
 .contact-form {
   display: flex;
@@ -192,7 +215,7 @@ body {
 }
 .form-control {
   justify-content: center;
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
   width: 30rem;
 }
 .form-field {
@@ -201,18 +224,18 @@ body {
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
   border-bottom: 1px solid gray;
-  color: #cacaca;
+  color: var(--color2);
 }
 .form-msg-field {
   width: 20rem;
   border: none;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
   border-bottom: 1px solid gray;
-  color: #cacaca;
+  color: var(--color2);
   padding: 0.5rem;
 }
 .form-msg-field::placeholder {
@@ -223,10 +246,10 @@ body {
   vertical-align: center;
 
   width: 7rem;
-  color: #cacaca;
+  color: var(--color2);
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
   padding-left: 1rem;
   padding-top: 0.5rem;
 }
@@ -237,13 +260,13 @@ body {
   display: flex;
   justify-content: flex-end;
   border: none;
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
 }
 
 .btn {
   padding: 0.5rem;
-  color: #cacaca;
-  background-color: rgb(41, 41, 44);
+  color: var(--color2);
+  background-color: var(--color1);
   cursor: pointer;
   border: 1px solid gray;
   margin-right: 1rem;
@@ -251,13 +274,13 @@ body {
 }
 .btn:hover {
   transition: all, 500ms;
-  color: rgb(41, 41, 44);
-  background-color: #cacaca;
+  color: var(--color1);
+  background-color: var(--color2);
 }
 
 /* CONTACT */
 .contact {
-  background-color: #cacaca;
+  background-color: var(--color2);
   padding-bottom: 1rem;
 }
 .contact-container {
@@ -266,14 +289,14 @@ body {
 }
 
 .contact-methods {
-  background-color: rgb(41, 41, 44);
+  background-color: var(--color1);
   margin: 1rem;
   padding: 1rem;
 }
-.contact-info:hover {
+/* .contact-info:hover {
   transition: all, 500ms;
   background-color: rgb(51, 51, 51);
-}
+} */
 
 .contact-info {
   display: flex;
@@ -282,21 +305,20 @@ body {
   font-size: 1.25rem;
 }
 .contact-type {
-  color: #cacaca;
+  color: var(--color2);
   width: 5rem;
   font-size: 1.5rem;
 }
 .link-wrapper {
 }
 .contact-link {
-  color: cyan;
+  color: var(--linkcolor);
   padding: 1rem;
   font-size: 1.5rem;
 }
-.icon-style:hover{
-  color: rgb(0, 255, 200)
+.icon-style:hover {
+  color: rgb(0, 255, 157);
 }
-
 
 @media (max-width: 900px) {
   .flex-menu {
@@ -305,7 +327,7 @@ body {
   .contact-container {
     display: grid;
   }
-  .menu-bar{
-    display: grid
+  .menu-bar {
+    display: grid;
   }
 }

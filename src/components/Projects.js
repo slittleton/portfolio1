@@ -25,7 +25,7 @@ const project2 = {
   other:
     "express, mongoDB, mongoose, jsonwebtoken, joi, bcrypt, config, redux, dotenv, braintree, query-string, react-redux, redux-thunk ",
   githubLink: "https://github.com/slittleton/ecomm1",
-  projectLink: "https://github.com/slittleton/ecomm1"
+  projectLink: "https://salty-citadel-11938.herokuapp.com/"
 };
 const project3 = {
   projectName: "PickyDex",
@@ -45,7 +45,7 @@ const Projects = React.forwardRef((props, projectsRef) => {
     <div className="spacer-container" ref={projectsRef}>
       <div className="projects">
         <div className="title-wrapper">
-          <div className="title-dark">Projects</div>
+          <div className="main-heading">Projects</div>
         </div>
 
         <div className="projects-container">
