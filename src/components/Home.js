@@ -12,6 +12,9 @@ const Home = React.forwardRef((props, homeRef) => {
   const { navClick, projectsRef, aboutRef, contactRef } = props;
   return (
     <div className="center" ref={homeRef}>
+      <div className="home-container">
+
+      
       <div className="flx center home">
         <img src={logo2} alt="Logo" className="logo blot-main" />
       </div>
@@ -45,6 +48,7 @@ const Home = React.forwardRef((props, homeRef) => {
             <CardFlip image1={blot3} image2={blot3Back} title1="CONTACT" />
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

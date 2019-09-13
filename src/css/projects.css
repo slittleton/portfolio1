@@ -2,7 +2,8 @@
 
 .projects {
   margin-top:5rem;
-  height:55rem;
+  min-height:60rem;
+
 }
 .projects-title-wrapper {
   text-align: center;
@@ -58,11 +59,7 @@
   display: flex;
   justify-content: center;
 }
-@media (max-width: 900px) {
-  .projects-container  {
-    display: grid;
-  }
-}
+
 .project-card {
   margin: 1rem;
 }
@@ -116,3 +113,13 @@
 }
 
 
+@media (max-width: 1400px) {
+  .projects-container  {
+    display: grid;
+
+  }
+  .box {
+    display: grid;
+    opacity:1
+  }
+}
