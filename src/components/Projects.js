@@ -6,6 +6,7 @@ import ecomm1 from "../img/ecomm1.png";
 import booksitePic from "../img/booksite-pic.png";
 import ProjectCard from "./layout/ProjectCard";
 
+
 const project1 = {
   projectName: "Calculator Cat",
   projectImg: catcalc,

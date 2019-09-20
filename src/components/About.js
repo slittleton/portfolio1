@@ -4,6 +4,7 @@ import "../css/about.css";
 import AboutEntry from "./layout/AboutEntry";
 import AboutEducation from "./AboutEducation";
 import AboutTech from "./AboutTech";
+import Resume from './Resume';
 
 const job1 = {
   title: "Creepy Hollow Designs",
@@ -57,6 +58,7 @@ const About = React.forwardRef((props, aboutRef) => {
             </div>
 
             <AboutEducation />
+            <Resume/>
           </div>
         </div>
       </div>

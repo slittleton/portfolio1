@@ -156,9 +156,8 @@ body {
 .home {
   padding-top: 5rem;
 }
-.home-container{
+.home-container {
   min-height: 80rem;
-
 }
 .banner {
   justify-content: center;
@@ -324,6 +323,28 @@ body {
   color: rgb(0, 255, 157);
 }
 
+.resume-container {
+  display: flex;
+  justify-content: center;
+}
+.resume {
+  margin-bottom: 5rem;
+}
+.resume-link {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--color2);
+  padding: 0.5rem;
+  border: 1px solid var(--color2);
+  margin: 0 2rem 2rem 2rem;
+  font-size: 1.5rem;
+  transition: all 500ms;
+}
+.resume-link:hover {
+  cursor: pointer;
+  transition: all 500ms;
+  padding: 1rem;
+}
+
 @media (max-width: 1200px) {
   .flex-menu {
     display: grid;
@@ -333,5 +354,9 @@ body {
   }
   .menu-bar {
     display: grid;
+  }
+  .resume-doc{
+    width: 600px;
+    height: 900px;
   }
 }
