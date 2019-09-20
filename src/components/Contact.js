@@ -14,7 +14,7 @@ const Contact = React.forwardRef((props, contactRef) => {
           <div className="contact-methods">
             <div className="contact-info">
               <div className="link-wrapper">
-                <a href="mailto:https://mail.google.com" className="contact-link icon-style">
+                <a href="mailto:slittletondev@gmail.com" className="contact-link icon-style">
                   slittletondev@gmail.com
                 </a>
               </div>

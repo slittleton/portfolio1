@@ -14,7 +14,7 @@ const CardFlip = (props) => {
 
     <div class="back">
         <img src={props.image2} alt="" className="imgfront" />
-        <div className="card-flip-title">{props.title2}</div>
+        <div className="card-flip-title2">{props.title2}</div>
         {props.children}
     </div>
 

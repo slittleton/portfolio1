@@ -3,6 +3,7 @@ import "../css/projects.css";
 import catcalc from "../img/catcalc1.png";
 import pickydex1 from "../img/pickydex1.png";
 import ecomm1 from "../img/ecomm1.png";
+import booksitePic from "../img/booksite-pic.png";
 import ProjectCard from "./layout/ProjectCard";
 
 const project1 = {
@@ -39,6 +40,18 @@ const project3 = {
   projectLink:
     "https://play.google.com/store/apps/details?id=com.pickydexnative"
 };
+const project4 = {
+  projectName: "Book/Author Website",
+  projectImg: booksitePic,
+  type: "Front End, Back End",
+  lang: "Javascript",
+  framework: "React",
+  runTimeEnvironment: "Node Js",
+  other:
+    "express, dotenv ",
+  githubLink: "https://github.com/slittleton/bookwebsite",
+  projectLink: "https://sheltered-reaches-93292.herokuapp.com/"
+};
 
 const Projects = React.forwardRef((props, projectsRef) => {
   return (
@@ -52,6 +65,7 @@ const Projects = React.forwardRef((props, projectsRef) => {
           <ProjectCard project={project1} />
           <ProjectCard project={project2} />
           <ProjectCard project={project3} />
+          <ProjectCard project={project4} />
         </div>
       </div>
     </div>

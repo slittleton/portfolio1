@@ -113,9 +113,23 @@
 }
 
 
+@media (max-width: 1700px) {
+  .projects-container  {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-items: center;
+  }
+  .box {
+    display: grid;
+    opacity:1
+  }
+
+}
 @media (max-width: 1400px) {
   .projects-container  {
     display: grid;
+    grid-template-columns:1fr;
+    justify-items: center;
 
   }
   .box {

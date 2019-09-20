@@ -66,7 +66,7 @@ const ProjectCard = props => {
             <div className="info-block">
               <div className="info-subtitle">Project Link</div>
               <a className="info-text a-link" href={projectLink}>
-                {projectName} Project
+                {projectName}
               </a>
             </div>
           </div>
