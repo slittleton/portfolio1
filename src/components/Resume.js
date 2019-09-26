@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import resume from "../resumeV4.2.docx";
+import resume from "../scottlittleton-resume.docx";
 
 const Resume = () => {
   // FOR PDF RESUME
