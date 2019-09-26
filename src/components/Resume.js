@@ -1,23 +1,37 @@
-import React,{useState} from "react";
-import resume from "../resumeV2.pdf";
+import React, { useState } from "react";
+import resume from "../resumeV4.2.docx";
 
 const Resume = () => {
-  const [show, setShow] = useState(false);
+  // FOR PDF RESUME
+  // const [show, setShow] = useState(false);
+  // const showResume = () =>{
+  //   if(show){
+  //     return(
+  //       <div className="resume-container">
+  //         <embed src={resume} width="900px" height="1200px" className="resume-doc"/>
+  //       </div>
+  //     )
+  //   }else {return null}
+  // }
+  //   return (
+  //     <div className="resume">
+  //       <button className="resume-link" onClick={()=>setShow(!show)}>Résumé</button>
 
-const showResume = () =>{
-  if(show){
-    return(
-      <div className="resume-container">
-        <embed src={resume} width="900px" height="1200px" className="resume-doc"/>
-      </div>
-    )
-  }else {return null}
-}
+  //       {showResume()}
+  //     </div>
+  //   );
+  // };
+
+  // FOR WORD DOC RESUME
   return (
     <div className="resume">
-      <button className="resume-link" onClick={()=>setShow(!show)}>Résumé</button>
-
-      {showResume()}
+      <a
+        className="resume-link"
+        href={resume}
+        style={{ textDecoration: "none" }}
+      >
+        Résumé
+      </a>
     </div>
   );
 };

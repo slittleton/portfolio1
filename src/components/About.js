@@ -4,22 +4,33 @@ import "../css/about.css";
 import AboutEntry from "./layout/AboutEntry";
 import AboutEducation from "./AboutEducation";
 import AboutTech from "./AboutTech";
-import Resume from './Resume';
+import Resume from "./Resume";
 
 const job1 = {
   title: "Creepy Hollow Designs",
   date: "2013 - 2019",
   webLink: "https://www.amazon.com/handmade/Creepy-Hollow-Designs",
-  jobTitle: "Graphic Designer, Tech Support, Manager",
+  jobTitle: "Owner, Technical Support, Graphic Designer",
   jobDescription:
-    "I was primarily engaged in designing graphics, customer support, product customization, and tech support",
+    "Primarily engaged in designing graphics, customer support, product customization, and tech support",
   jobDetails: [
-    "Graphic Design - Designed large portion of the companies graphics for use in everything from products to logos, banners, advertisements, etc",
-    "Product Creation - The nature of the company required creating products that could be generalized with a wide variety of designs and options. More specifically, jewlery with bezel attachments that have images in them",
-    "Customer Support - Handled every type of customer issue ranging from creating custom product designs to handling billing, shipping, returns and generally anything customers might need",
-    "Tech Support - eCommerce website maintenance and improvement, handled all tech related issue, if needed to be fixed, updated, renewed, or otherwise improved",
-    "Supply Coordination and Purchase - Applied fractional reserve principles to supply. Negotiated with overseas and local suppliers for materials including customized batches from manufacturers.",
-    "Company Management - Involved in virtually all management level decision making."
+    "Created, updated, and maintained all web content on multiple ecommerce platforms",
+    "Illustrated and designed customized graphics for handmade jewelry and accessories",
+    "Spearheaded and executed brand development and marketing collateral including company logo, digital advertisements and banners",
+    "Oversaw and managed all business operations and decision making as well as customer support, vendor/supplier negotiations and ordering"
+  ]
+};
+const job2 = {
+  title: "Freelance Web Development",
+  date: "2018 - 2019",
+  webLink: "slittleton.com",
+  jobTitle: "Web Developer",
+  jobDescription:
+    "Continue to develop applications rangin from Front End, Back End, Mobile",
+  jobDetails: [
+    "Demonstrated end-to-end ownership of development for front-end and full stack applications including mobile apps and websites",
+    "Drove technical and visual design of mobile apps that are available on Google Play",
+
   ]
 };
 
@@ -54,11 +65,12 @@ const About = React.forwardRef((props, aboutRef) => {
             </div>
 
             <div className="experience-type">
+              <AboutEntry jobInfo={job2} />
               <AboutEntry jobInfo={job1} />
             </div>
 
             <AboutEducation />
-            <Resume/>
+            <Resume />
           </div>
         </div>
       </div>
