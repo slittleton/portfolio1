@@ -34,7 +34,7 @@ const backEnd = ["Node.js", "Express", "MongoDb", "SQL"];
 const uxui = ["Photoshop", "Illustrator", "Clip Studio Paint"];
 const other = ["Git"];
 
-const ETLearnAbout = ["C#", ".Net", "Java", "Kotlin", "PHP"];
+const ETLearnAbout = ["C#", ".NET", "Java", "Kotlin", "PHP"];
 
 const AboutTech = () => {
   return (
