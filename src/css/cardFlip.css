@@ -39,7 +39,7 @@
   font-weight: bold;
   width: 100%;
   transform: translate(-50%, -50%);
-  transition: all 500ms;
+  transition: all 400ms;
   border:none;
 }
 
@@ -54,7 +54,7 @@
   backface-visibility: hidden;
   width: 100%;
   height: 100%;
-  transition: transform 600ms linear;
+  transition: transform 400ms ease-in-out;
 }
 .front {
   transform: perspective(600px) rotateY(0deg);

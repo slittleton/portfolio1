@@ -98,7 +98,7 @@ body {
   margin: 0;
   justify-content: center;
   position: fixed;
-  background-color: var(--color4);
+  background-color: var(--color1);
   color: var(--color5);
   z-index: 10;
 }
@@ -168,21 +168,21 @@ body {
   margin: 3rem 0 3rem 0;
   padding: 1rem;
 
-  transition: all 900ms;
+  transition: all 1200ms;
 }
 .banner:hover {
-  transition: all 900ms;
+  transition: all 1200ms;
   background-color: var(--color2);
   color: var(--color1);
 }
 .blot {
   margin: 1rem;
   padding: 2rem;
-  transition: all 900ms;
+  transition: all 500ms;
   border-radius: 50%;
 }
 .blot:hover {
-  transition: all 900ms;
+  transition: all 500ms;
   /* background-color: var(--color4); */
 
   /* border-radius: 50%; */
@@ -190,20 +190,20 @@ body {
 .blot-main {
   margin: 1rem;
   padding: 1rem;
-  transition: all 900ms;
+  transition: all 500ms;
 }
 .blot-main:hover {
-  transition: all 900ms;
+  transition: all 500ms;
   background: var(--color4);
   border-radius: 50%;
 }
 .img-back {
   /* background-color: none;
-  transition: all 900ms; */
+  transition: all 500ms; */
 }
 /* .img-back:hover {
   background-color: black;
-  transition: all 900ms;
+  transition: all 500ms;
 } */
 
 /* FORMS */
