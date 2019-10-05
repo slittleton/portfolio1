@@ -65,13 +65,13 @@ const AboutTech = () => {
 
         <div className="exp-grid">
           <div className="small-grid-unit">
-            <div className="sub-subtitle">Excited To Learn About</div>
+            <div className="sub-subtitle small-padtop">Excited To Learn About</div>
           </div>
         </div>
         <div className="exp-grid">
           <div className="small-grid-unit"></div>
           <div className="flx">
-            <div className="exp-item list-grid">
+            <div className="exp-item list-grid small-padtop">
               {ETLearnAbout.map((item, index) => {
                 return (
                   <li className="grid-list-item" key={index}>

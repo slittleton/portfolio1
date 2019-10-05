@@ -51,16 +51,18 @@
 .exp-subtitle {
   background-color: var(--color1);
 }
-.text {
-  font-size: 1.5rem;
-}
+
 .bottom {
   margin-top: 2rem;
 }
 .exp-container {
   margin: 2rem;
 }
-
+ .jobtitle{
+   font-weight: bold;
+   font-size: 1.5rem;
+   text-decoration: underline;
+ }
 .exp {
   background-color: var(--color1);
   display: flex;
@@ -68,7 +70,6 @@
 .exp-grid {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  margin-bottom: 1rem;
 }
 
 .exp-ul {
@@ -95,6 +96,9 @@
 .grid-list-item {
   font-size: 1.25rem;
   margin-right: 1rem;
+}
+.education-title{
+  font-weight: bold;
 }
 @media (max-width: 900px) {
   .top .top-container {

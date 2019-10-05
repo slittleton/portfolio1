@@ -9,8 +9,8 @@ const AboutEntry = props => {
       <div className="exp-grid">
       
         <div className="small-grid-unit">
-        <div className="sub-subtitle">Job</div>
-          <div className="subsubtitle">{title}</div>
+        
+          <div className="jobtitle small-padtop">{title}</div>
           <div className="date">{date}</div>
           {webLink ? (
             <a href={webLink} className="atag">
@@ -19,7 +19,7 @@ const AboutEntry = props => {
           ) : null}
         </div>
         <div className="">
-          <p className="subtitle exp-subtitle">{jobTitle}</p>
+          <p className="subtitle exp-subtitle">Title: {jobTitle}</p>
           <p className="exp-item">{jobDescription}</p>
           <ul className="exp-ul">
             {jobDetails.map(detail => {

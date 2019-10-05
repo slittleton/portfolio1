@@ -36,7 +36,9 @@ body {
   background-color: var(--color1);
   color: var(--color2);
 }
-
+.text {
+  font-size: 1.5rem;
+}
 .App {
   margin: 0;
   padding: 0;
@@ -50,6 +52,15 @@ body {
 }
 .medium-pad {
   padding: 1rem;
+}
+.small-padtop{
+  padding-top: 1rem;
+}
+.med-margin{
+  margin:1rem;
+}
+.smallpad-left{
+ padding-left: .5rem;
 }
 .center {
   justify-content: center;
@@ -77,7 +88,7 @@ body {
   font-size: 1.25rem;
   font-weight: bold;
 }
-.subsubtitle {
+.sub-subtitle {
   font-weight: bold;
 }
 .atag {

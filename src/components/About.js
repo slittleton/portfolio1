@@ -37,7 +37,7 @@ const job2 = {
 const About = React.forwardRef((props, aboutRef) => {
   return (
     <div ref={aboutRef}>
-      <div className="spacer-container">
+      <div className="spacer-container small-padtop text">
         <div className="about">
           <div className="top">
             <div className="top-container">

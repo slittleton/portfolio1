@@ -23,7 +23,7 @@ const ProjectCard = props => {
 
   return (
     <div
-      className="project-card"
+      className="project-card text"
       onMouseEnter={changeTrans}
       onMouseLeave={changeTrans}
     >
@@ -37,15 +37,15 @@ const ProjectCard = props => {
           <div className="box">
             <div className="info-block">
               <div className="info-subtitle">Project Type</div>
-              <div className="info-text">{type}</div>
+              <div className="info-text ">{type}</div>
             </div>
             <div className="info-block">
               <div className="info-subtitle">{`Language(s)`}</div>
-              <div className="info-text">{lang}</div>
+              <div className="info-text smallpad-left">{lang}</div>
             </div>
             <div className="info-block">
               <div className="info-subtitle">{`Framework(s)`}</div>
-              <div className="info-text">{framework}</div>
+              <div className="info-text smallpad-left">{framework}</div>
             </div>
             {runTimeEnvironment ? (
               <div className="info-block">
@@ -64,7 +64,7 @@ const ProjectCard = props => {
               </a>
             </div>
             <div className="info-block">
-              <div className="info-subtitle">Project Link</div>
+              <div className="info-subtitle">Live Project</div>
               <a className="info-text a-link" href={projectLink}>
                 {projectName}
               </a>

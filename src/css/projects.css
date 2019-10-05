@@ -2,7 +2,7 @@
 
 .projects {
   margin-top:5rem;
-  min-height:60rem;
+  min-height:75rem;
 
 }
 .projects-title-wrapper {
@@ -42,18 +42,23 @@
 .info-block {
   background-color: var(--color3);
   color: var(--color2);
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1.5fr 3fr;
   border: 1px solid var(--color3);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+ 
 }
 
 .info-subtitle {
   font-weight: bold;
   padding-left: 0.5rem;
+ 
 }
 .info-text {
+  padding-left: .5rem;
+  font-size: 1.25rem
+  
 }
 .projects-container {
   display: flex;
