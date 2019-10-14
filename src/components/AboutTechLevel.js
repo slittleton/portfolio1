@@ -2,11 +2,11 @@ import React from "react";
 
 const AboutTechLevel = ({ tech, category }) => {
   return (
-    <div classname="">
+    <div className="">
       <div className="subtitle small-padtop">{category}</div>
-      {tech.map(item => {
+      {tech.map((item, index) => {
         return (
-          <div>
+          <div key={index}>
             <li className="text">{item}</li>
           </div>
         );

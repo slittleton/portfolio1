@@ -22,8 +22,8 @@ const AboutEntry = props => {
           <p className="subtitle exp-subtitle">Title: {jobTitle}</p>
           <p className="exp-item">{jobDescription}</p>
           <ul className="exp-ul">
-            {jobDetails.map(detail => {
-              return <li>{detail}</li>;
+            {jobDetails.map((detail,index) => {
+              return <li key={index}>{detail}</li>;
             })}
           </ul>
         </div>

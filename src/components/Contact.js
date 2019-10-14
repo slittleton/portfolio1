@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import ContactForm from "./forms/ContactForm";
-import Menu from "./layout/Menu";
+import React from "react";
+
 const Contact = React.forwardRef((props, contactRef) => {
 
   return (
@@ -26,18 +25,18 @@ const Contact = React.forwardRef((props, contactRef) => {
                   href="https://github.com/slittleton"
                   className="contact-link"
                 >
-                  <i class="fab fa-github fa-2x icon-style"></i>
+                  <i className="fab fa-github fa-2x icon-style"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/scott-littleton-1a1246161/"
                   className="contact-link"
                 >
-                  <i class="fab fa-linkedin-in fa-2x icon-style" style={{verticalAlign:'center'}}></i>
+                  <i className="fab fa-linkedin-in fa-2x icon-style" style={{verticalAlign:'center'}}></i>
                 </a>
               </div>
             </div>
           </div>
-          {/* <ContactForm /> */}
+          
           <div></div>
         </div>
       </div>
