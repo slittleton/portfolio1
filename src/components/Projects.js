@@ -38,8 +38,7 @@ const project3 = {
   other:
     "redux, react-redux, redux-thunk, react-native-community/async-storage, react-native-gesture-handler, react-navigation",
   githubLink: "https://github.com/slittleton/pickydexNative",
-  projectLink:
-    "https://play.google.com/store/apps/details?id=com.pickydexnative"
+
 };
 const project4 = {
   projectName: "Book/Author Website",

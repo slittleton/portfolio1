@@ -63,12 +63,14 @@ const ProjectCard = props => {
                 {projectName} Github
               </a>
             </div>
-            <div className="info-block">
-              <div className="info-subtitle">Live Project</div>
-              <a className="info-text a-link" href={projectLink}>
-                {projectName}
-              </a>
-            </div>
+            {projectLink ? (
+              <div className="info-block">
+                <div className="info-subtitle">Live Project</div>
+                <a className="info-text a-link" href={projectLink}>
+                  {projectName}
+                </a>
+              </div>
+            ) : null}
           </div>
         </CSSTransition>
       </div>
