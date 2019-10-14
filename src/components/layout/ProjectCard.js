@@ -41,11 +41,11 @@ const ProjectCard = props => {
             </div>
             <div className="info-block">
               <div className="info-subtitle">{`Language(s)`}</div>
-              <div className="info-text smallpad-left">{lang}</div>
+              <div className="info-text">{lang}</div>
             </div>
             <div className="info-block">
               <div className="info-subtitle">{`Framework(s)`}</div>
-              <div className="info-text smallpad-left">{framework}</div>
+              <div className="info-text">{framework}</div>
             </div>
             {runTimeEnvironment ? (
               <div className="info-block">
