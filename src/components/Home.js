@@ -13,42 +13,42 @@ const Home = React.forwardRef((props, homeRef) => {
   return (
     <div className="center" ref={homeRef}>
       <div className="home-container">
+        <div className="flx center home">
+          <img src={logo2} alt="Logo" className="logo blot-main" />
+        </div>
 
-      
-      <div className="flx center home">
-        <img src={logo2} alt="Logo" className="logo blot-main" />
-      </div>
-
-      <div className="banner">
-        <div className="subtitle">Hi my name is Scott.</div>
-        <div className="subtitle">I'm a web developer in Glendale Arizona.</div>
-      </div>
-
-      <div className="flex-menu small-pad center img-back">
-        <div className="flex-menu-item small-pad blot">
-          <div onClick={() => navClick(aboutRef)} className="link">
-            <CardFlip
-              image1={blot1}
-              image2={blot1Back}
-              title1="ABOUT"
-            ></CardFlip>
+        <div className="banner">
+          <div className="subtitle">Hi my name is Scott.</div>
+          <div className="subtitle">
+            I'm a web developer in Glendale Arizona.
           </div>
         </div>
-        <div className="flex-menu-item small-pad blot">
-          <div onClick={() => navClick(projectsRef)} className="link ">
-            <CardFlip
-              image1={blot2}
-              image2={blot2back}
-              title1="PROJECTS"
-            ></CardFlip>
+
+        <div className="flex-menu small-pad center img-back">
+          <div className="flex-menu-item small-pad blot">
+            <div onClick={() => navClick(aboutRef)} className="link">
+              <CardFlip
+                image1={blot1}
+                image2={blot1Back}
+                title1="ABOUT"
+              ></CardFlip>
+            </div>
+          </div>
+          <div className="flex-menu-item small-pad blot">
+            <div onClick={() => navClick(projectsRef)} className="link ">
+              <CardFlip
+                image1={blot2}
+                image2={blot2back}
+                title1="PROJECTS"
+              ></CardFlip>
+            </div>
+          </div>
+          <div className="flex-menu-item small-pad blot">
+            <div onClick={() => navClick(contactRef)} className="link">
+              <CardFlip image1={blot3} image2={blot3Back} title1="CONTACT" />
+            </div>
           </div>
         </div>
-        <div className="flex-menu-item small-pad blot">
-          <div onClick={() => navClick(contactRef)} className="link">
-            <CardFlip image1={blot3} image2={blot3Back} title1="CONTACT" />
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   );
